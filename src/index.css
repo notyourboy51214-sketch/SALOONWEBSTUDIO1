@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-stone: #EDE6DC;
+    --color-stone-light: #F7F3ED;
+    --color-stone-dark: #DFD7CB;
+    --color-navy: #1F2B3A;
+    --color-navy-dark: #141D27;
+    --color-navy-soft: #2E3E52;
+    --color-bronze: #A87C4F;
+    --color-bronze-light: #C29668;
+    --color-bronze-dark: #8C653D;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: #EDE6DC;
+    color: #1F2B3A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-feature-settings: "liga" 1, "dlig" 1;
+  }
+}
+
+/* Custom horizontal scroll bar styling */
+.horizontal-scroll-container {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-snap-card {
+  scroll-snap-align: start;
+}
+
+/* Hairline dividers */
+.hairline-border-b {
+  border-bottom: 1px solid rgba(31, 43, 58, 0.12);
+}
+.hairline-border-t {
+  border-top: 1px solid rgba(31, 43, 58, 0.12);
+}
+.hairline-border {
+  border: 1px solid rgba(31, 43, 58, 0.12);
+}
